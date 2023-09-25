@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Kraft Covers Library</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier New">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Courier New", monospace}
+.w3-bar,h1,button {font-family: "Couriew New", monospace}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-brown w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="KraftCovers.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large w3-white">About Us</a>
+    <a href="visit.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Visit</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Services</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="visit.html" class="w3-bar-item w3-button w3-padding-large">Visit</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-padding-large">Services</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-sand w3-center" style="padding:70px 30px">
+  <h1 class="w3-margin w3-xxxlarge">About Us</h1> 
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h2> <b>Kraft Covers Library</b></h2>
+      <h5 class="w3-padding-32"> <p> Our library is established by the local government of Tampa. We are a nonprofit corporation that is open to the public. However, we are not just your every day library.</p>
+		  <h2> What makes us different?</h2>
+		  <p> We make sure our readers don't judge our books by their covers... <i> literally! </i> We wrap all of our books in kraft paper and other recycled materials (such as newspaper, leftover giftwraps, and more). <br> All our books have 5 bulletpointed lists handwritten onto their kraft paper covers that provide a glimpse into the book.</p>
+		  <dl>
+		  <dt> We list characteristics such as:
+			  <dd>
+			  <ul> 
+				  <li><b>Horror</b> </li>
+				  <li><b>Romance</b> </li>
+				  <li><b>Has a movie made after it</b> </li>
+				  <li><b>7.8 Star Rating on Good Reads App</b> </li>
+				  <li><b>Part of a series</b> </li>
+				  <li>Personal Note: One of my favorites, it's a book you can read over and over and never get tired of! </li>
+				  </dd>
+      
+    </div>
+
+    <div class="w3-third w3-center">
+		<br> <br> <br> <br>
+      <img src="KraftCovers.png" width = "300" height = "400" alt= "Logo"> </img>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="w3-container w3-brown w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">"A cover is not the book, so open it up and take a look" </h1>
+		<br> <p>- Mary Poppins</p>
+</div>
+
+<!-- Footer -->
+
+<br>
+	<br>
+	<br>
+ <p> <center> This is not a real organization and is strictly for educational purposes.</center> </p>
+	<br>
+	<br>
+	<br>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+

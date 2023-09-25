@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dani's Javascript</title>
+	<link rel="stylesheet" href="styleimage.css">
+</head>
+<body>
+
+<h2>Danielle Cuestas</h2>
+	
+	<hr>
+	<p> This is Module 8 below:</p>
+	<form action="module8.php" method="post">
+	First Name: <input name="fname" type="text"/>
+	Classification: <select name="class">
+		<option>Freshman</option>
+		<option>Sophomore</option>
+		<option>Junior</option>
+		<option>Senior</option>
+		</select>
+		<input type="Submit"/>
+		
+	</form>
+	
+	<hr>
+	
+<p> Animated Image:</p>	
+	
+<div id="demo">
+  <p id="image" onmouseover="animateScript()" onmouseout="stopAnimate()"> </p>
+</div>	
+
+<script> 
+var tID; //we will use this variable to clear the setInterval()
+	
+	function stopAnimate() {
+clearInterval(tID);
+} //end of stopAnimate()
+	
+function animateScript() {
+var    position = 256; //start position for the image slicer
+const  interval = 100; //100 ms of interval for the setInterval()
+tID = setInterval ( () => {
+document.getElementById("image").style.backgroundPosition = 
+`-${position}px 0px`; 
+//we use the ES6 template literal to insert the variable "position"
+if (position < 1536)
+{ position = position + 230;} //incriments basically
+else
+{ position = 256; }
+//reset the position to 256px, once position exceeds 1536px
+}
+, interval ); //end of setInterval
+}
+	</script>
+
+<hr>	
+
+<p>Click the button below to start Module 4's Javascript Assignment.</p>
+
+
+	
+	
+<button onclick="myFunction()">Try it</button>
+
+<p id="demoo"></p>
+
+<script>
+function myFunction() {
+  var user = prompt("Hi, what's your name?", "Enter your name");
+  if (user != null) {
+    document.getElementById("demoo").innerHTML =
+    "Hi there " + user + "! I hope you enjoyed this JavaScript!";
+  }
+	
+}
+</script>
+
+	<hr>
+<!- FORM EXAMPLE ->
+
+<script>
+	function validateForm() {    
+		var x = document.forms["myForm"]["input"].value;
+		if (x  !== "Smile")
+		{        
+			alert("You didn't type in the word: Smile. Try again.");
+			return false;
+		}
+	}
+	</script>
+	
+	
+		<form name="myForm" action="demo_form.php" onsubmit="return validateForm();" method="post">
+			Type the word "Smile": <input type="text" name="input">
+			<input type="submit" value="Check me">
+	</form>
+
+
+<!- END FORM ->
+	
+	
+	<hr>
+	
+	
+<p> This is my image exported from Photoshop for Module 4 Assignment: </p>
+	<img src= "coffee.jpg" alt= "Coffee Image"> </img>
+
+<p> Smiley <b>Gif</b> Below:</p>
+<img src=smiley.gif width=300 height=300 alt="smiley gif"> </img>
+	<hr>
+<p> Smiley <b>PNG</b> Below: </p>
+<img src=smiley.png width=300 height=300 alt="smiley PNG"> </img>
+	<hr>
+<p> Smiley <b>JPG</b> Below: </p>
+<img src=smiley.jpg width=300 height=300 alt="smiley JPG"> </img>
+
+<a href="Index2.html">Back to Main Page</a>
+</body>
+</html>
+<body>
+</body>
+</html>
